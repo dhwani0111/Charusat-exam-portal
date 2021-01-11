@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="OnlineExaminationMaster.master.cs" Inherits="OnlineExamination.OnlineExaminationMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Charusat Exam Portal</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<!--<body background="images/bg.jpg"> -->
+<body>
+<form id="form1" runat="server">
+<div id="wrapper" class="container">
+	<div id="header">
+		<div id="logo">
+			<h1><a href="#">Charusat Exam Portal</a></h1>			
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="Home.aspx">Homepage</a></li>
+			
+                <li id="liTeacher" runat="server"><a href="AddTeachersDetails.aspx">Teacher</a></li>
+                <li runat="server" id="liStudent"><a href="AddStudentsDetails.aspx">Student</a></li>
+                <li runat="server" id="liCourse"><a href="AddCourseDetails.aspx">Course</a></li>
+                <li runat="server" id="liSubject"><a href="AddSubjectsDetails.aspx">Subject</a></li>
+                <li runat="server" id="liQuestion"><a href="AddQuestionDetails.aspx">Question</a></li>
+                <li runat="server" id="liAnswer"><a href="AddAnswerDetails.aspx">Answer</a></li>
+                <li runat="server" id="liStudentProfile"><a href="StudentProfile.aspx">My Profile</a></li>
+                <li runat="server" id="liViewStudent"><a href="ViewStudentDetails.aspx">View Student</a></li>
+                <li runat="server" id="liWriteExam"><a href="WriteExam.aspx">Write Exam</a></li>
+                <li runat="server" id="liViewResult"><a href="ViewResult.aspx">View Result</a></li>
+                <li runat="server" id="liViewStudentResult"><a href="ViewStudentResult.aspx">View Result</a></li>
+                <li><asp:LinkButton ID="lbLogin" runat="server" onclick="lbLogin_Click" 
+                        CausesValidation="False">Login</asp:LinkButton></li>
+                
+            </ul>
+		</div>
+	</div>
+
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </div>
+    </form>
+
+    
+</body>
+</html>
